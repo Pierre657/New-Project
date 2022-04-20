@@ -162,6 +162,7 @@ header {
 .nav__list {
     list-style: none;
     display: flex;
+    width: 25%;
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
@@ -173,7 +174,8 @@ header {
 .nav__link {
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-family: var(--ff-secondary);
+    font-size: 2em;
     text-decoration: none;
 }
 
@@ -193,7 +195,7 @@ header {
 }
 
 .nav-open .nav {
-    transform: translateX(0);
+    transform: translateX(75%);
 }
 
 .nav-open .nav-toggle {
