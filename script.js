@@ -1,9 +1,12 @@
-function cool(a, b) {
-    console.log(a * b);
-}
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link')
 
-cool(40, 50);
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
 
-document.querySelector(".portfolio").addEventListener('click', function(){
-    alert("c'est bon ça");
-}) 
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})
