@@ -144,6 +144,8 @@ header {
 
 .logo {
     max-width: 100px;
+    position: relative;
+    bottom: 11px;
 }
 
 .nav {
