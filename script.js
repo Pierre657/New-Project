@@ -10,3 +10,9 @@ navLinks.forEach(link => {
         document.body.classList.toggle('nav-open');
     })
 })
+
+const appear = document.querySelector('.porfolio__img');
+
+appear.addEventListener('mouseover', () => {
+    document.body.innerText = "suce mon boule";
+})
